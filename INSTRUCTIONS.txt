@@ -1,0 +1,44 @@
+Follow these steps to build your GiTD game:
+	
+	1: Edit the default media.
+		- Modify all the files of the lib folder. 
+		- To avoid unnecessary edition, keep the original names of the files.	
+		
+	4: Configure the template.
+		- Open the Config.as file located inside of the configuration folder.
+		- Read the instructions there and edit the values.
+		- Keep GAME_ONLY as false until you start building the actual game.
+		- The project targets FP 11.0. Edit it if you need new functionalities.		
+		
+	3: Add your intro.
+		- Skip if you set the Config.SHOW_INTRO property to false.
+		- Open Intro.as located in src/display/logo.
+		- Read the instructions and add your intro animation logic.		
+		
+	4: Configure your save file.
+		- Open Save.as located in src/data.
+		- Add all the properties that you will use.
+		- Uncomment the file.data.x=true; line.(Comment it whenever you need to add a new property).
+		
+	5: Build your game.
+		- Set Config.GAME_ONLY property to true.
+		- Open Game.as located in the game folder.
+		- Follow the instructions there.
+		
+	6: Build your preview.
+		- Skip if you set Config.SHOW_OPTIONS to false.
+		- Open Preview.as located in the game folder.
+		- Follow the instructions there.
+		
+	7: Edit your highscores.
+		- Skip if you won't publish to Kong or set Config.KONG_API to false.
+		- Open Highscores.as located in src/kong.
+		- Follow the instructions there.		
+		
+	8: Publish.
+		- Set Config.GAME_ONLY to false.
+		- Uncomment the file.data.x=true; in the Save class if you haven't done so.
+		- Set FD's build configuration to Release.
+		- If you upload to Kong, make sure to declare the scores to be submited.
+		
+Note: You can view your remaining tasks in the tasks panel of FlashDevelop.		
